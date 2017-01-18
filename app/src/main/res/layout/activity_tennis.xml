@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_football"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vicky.courtside.football"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="850dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/imageButton8"
+                android:background="@drawable/topspin"
+                android:alpha="0.6"
+                android:layout_marginTop="21dp"
+                android:layout_below="@+id/imageButton"
+                android:layout_alignParentStart="true"
+                android:onClick="tps" />
+
+            <TextView
+                android:text="Top spin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView18"
+                android:textColor="@color/cast_expanded_controller_text_color"
+                android:textSize="36sp"
+                android:alpha="0.9"
+                android:layout_alignTop="@+id/imageButton8"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="47dp" />
+
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/imageButton9"
+                android:background="@drawable/bulldog"
+                android:alpha="0.6"
+                android:layout_marginTop="133dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:onClick="bull" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@drawable/tban"
+                android:alpha="0.8"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/imageButton"
+                android:alpha="0.6"
+                android:layout_marginTop="15dp"
+                android:onClick="noah"
+                android:layout_below="@+id/imageButton7"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/noah" />
+
+            <TextView
+                android:text="Noah Academy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView11"
+                android:textColor="@color/cast_expanded_controller_text_color"
+                android:textSize="36sp"
+                android:alpha="0.9"
+                android:layout_marginBottom="52dp"
+                android:layout_above="@+id/imageButton8"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:text="Bulldog Club"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:textColor="@color/cast_expanded_controller_text_color"
+                android:textSize="36sp"
+                android:alpha="0.9"
+                android:layout_marginBottom="51dp"
+                android:layout_above="@+id/imageButton7"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/imageButton7"
+                android:alpha="0.6"
+                android:background="@drawable/kennis"
+                android:layout_marginTop="28dp"
+                android:onClick="ken"
+                android:layout_below="@+id/imageButton9"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="kinesis Academy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:textColor="@color/cast_expanded_controller_text_color"
+                android:textSize="36sp"
+                android:alpha="0.9"
+
+                android:layout_alignTop="@+id/imageButton7"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="52dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

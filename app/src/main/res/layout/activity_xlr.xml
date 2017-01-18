@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_xlr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vicky.courtside.xlr"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1050dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView13"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+
+                android:text="This is a 5-aside football court."
+                android:layout_below="@+id/imageView7"
+                android:layout_alignParentStart="true" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView14"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:text="It has the facilities of parking and washrooms"
+                android:layout_marginTop="11dp"
+                android:layout_below="@+id/textView13"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="XLR8 started in the year 2010 by Suraj tiru."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:layout_below="@+id/textView5"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:text="XLR8 is located at Baglur near Hennur"
+                android:layout_below="@+id/textView14"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="14dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_below="@+id/imageView8"
+                android:layout_alignParentStart="true">
+
+
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/imageButton2"
+                    android:background="@drawable/navicon"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/imageButton6"
+                    android:onClick="nav" />
+
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/imageButton6"
+                    android:background="@drawable/bkicon"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="11dp"
+                    android:onClick="book" />
+
+                <TextView
+                    android:text="800"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView15"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="24sp"
+                    android:layout_above="@+id/imageButton5"
+                    android:layout_alignEnd="@+id/imageButton6"
+                    android:layout_marginBottom="94dp" />
+
+                <TextView
+                    android:text="The cost for the court per hour is"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView16"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp"
+                    android:layout_above="@+id/textView15"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="28dp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView6"
+                    android:src="@drawable/water"
+                    android:layout_weight="0.50"
+                    android:layout_gravity="right"
+                    android:layout_alignTop="@+id/imageView5"
+                    android:layout_centerHorizontal="true"
+                    android:alpha="0.7" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView3"
+                    android:src="@drawable/park"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imageView6"
+                    android:alpha="0.7" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView5"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/was"
+                    android:layout_alignTop="@+id/imageView3"
+                    android:layout_toStartOf="@+id/imageView6"
+                    android:alpha="0.7" />
+
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/imageButton5"
+                    android:background="@drawable/bc"
+                    android:onClick="can"
+                    android:alpha="0.5"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toStartOf="@+id/imageView3" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/imageView7"
+                android:alpha="0.7"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/xlr8logo" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/imageView8"
+                android:alpha="0.8"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/textView6"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/tf" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
